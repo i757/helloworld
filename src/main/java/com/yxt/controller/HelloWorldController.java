@@ -1,0 +1,21 @@
+package com.yxt.controller;
+
+import org.springframework.stereotype.Controller;
+import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.bind.annotation.ResponseBody;
+
+@Controller
+public class HelloWorldController {
+
+    @RequestMapping("/hello")
+    @ResponseBody
+    public String helloWorld(){
+        return "hello spring boot aaa";
+    }
+
+    @RequestMapping("/test111")
+    @ResponseBody
+    public String test(){
+        return "hello spring boot test";
+    }
+}
